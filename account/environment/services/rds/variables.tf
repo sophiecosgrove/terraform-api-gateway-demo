@@ -6,3 +6,7 @@ variable "environment" {
 variable "owner" {
   default = "sophie"
 }
+
+# secret values
+variable "password" {}
+variable "username" {}

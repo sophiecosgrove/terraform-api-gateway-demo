@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "sophie-demo-terraform-state"
-    key    = "terraform/account/environment/infrastructure/vpc/terraform.tfstate"
+    key    = "terraform/account/environment/services/rds/terraform.tfstate"
     region = "eu-west-1"
     acl    = "bucket-owner-full-control"
   }
