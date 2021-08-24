@@ -9,7 +9,7 @@ In order to avoid dependency issues it is recommended to execute deployment of r
 5. [ Load Balancers ](#load-balancers)
 
 ### VPC
-####To deploy:
+#### To deploy:
 ``` 
     cd account/environment/infrastructure/vpc
     terraform init
@@ -18,7 +18,7 @@ In order to avoid dependency issues it is recommended to execute deployment of r
 
 ### Relational Database
 * Used by the backend users application to persist data.
-####To deploy:
+#### To deploy:
 
 ```
     cd account/environment/services/rds
@@ -29,7 +29,7 @@ You will be prompted for a username and password after executing terraform apply
 
 ### DynamoDB
 * Used by the backend products application to persist data
-####To deploy:
+#### To deploy:
 ```
     cd account/environment/services/dynamodb
     terraform init
@@ -45,10 +45,10 @@ You will be prompted for a username and password after executing terraform apply
     terraform apply
 ```
 
-###Load Balancers
+### Load Balancers
 * Configured to allow traffic on port 80 from a personal IP address. If secure access for the public is required uncomment and follow the instructions in modules/support/services/load-balancers/listeners.tf.
 
-####To deploy:
+#### To deploy:
 
 ```
     cd account/environment/services/load-balancer
