@@ -26,15 +26,15 @@ resource "aws_lb_listener" "nlb_backend_products_listener" {
 
 resource "aws_lb_listener" "alb_listener_80" {
   load_balancer_arn = aws_lb.ecs_application_load_balancer.arn
-  port = 80
-  protocol = "HTTP"
+  port              = 80
+  protocol          = "HTTP"
   default_action {
-    type = "forward"
+    type             = "forward"
     target_group_arn = aws_lb_target_group.alb_frontend_target_group_blue.arn
   }
   lifecycle {
     ignore_changes = [
-      default_action]
+    default_action]
   }
 }
 # for configurations where the load balancer redirects http traffic to https, replace above default action with:
