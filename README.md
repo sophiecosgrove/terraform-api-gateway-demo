@@ -1,6 +1,6 @@
 # Internal Amazon API Gateway with Terraform
 ## Intended Architecture
-![ Architecture Diagram ](https://github.com/sophiecosgrove/terraform-api-gateway-demo/blob/readme/architecture.png)
+![ Architecture Diagram ](https://github.com/sophiecosgrove/terraform-api-gateway-demo/blob/main/architecture.png)
 ## Deployment Order
 In order to avoid dependency issues it is recommended to execute deployment of resources in the following order:
 1. [ VPC ](#vpc)
@@ -47,7 +47,7 @@ _Note: Relational Database, DynamoDB and S3 are dependent on the microservices u
 ```
 
 ### Load Balancers
-* Configured to allow traffic on port 80 from a personal IP address. If secure access for the public is required, uncomment and follow the instructions in [ modules/support/services/load-balancers/listeners.tf ](https://github.com/sophiecosgrove/terraform-api-gateway-demo/blob/readme/modules/support/services/load-balancers/listeners.tf).
+* Configured to allow traffic on port 80 from a personal IP address. If secure access for the public is required, uncomment and follow the instructions in [ modules/support/services/load-balancers/listeners.tf ](https://github.com/sophiecosgrove/terraform-api-gateway-demo/blob/main/modules/support/services/load-balancers/listeners.tf).
 
 #### Init and apply from:
 
