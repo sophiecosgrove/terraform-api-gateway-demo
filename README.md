@@ -1,5 +1,6 @@
 # Internal Amazon API Gateway with Terraform
-
+## Intended Architecture
+![ Architecture Diagram ](https://github.com/sophiecosgrove/terraform-api-gateway-demo/blob/readme/architecture.png)
 ## Deployment Order
 In order to avoid dependency issues it is recommended to execute deployment of resources in the following order:
 1. [ VPC ](#vpc)
